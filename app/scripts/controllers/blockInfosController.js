@@ -1,4 +1,4 @@
-angular.module('ethExplorer')
+angular.module('EarthDollar Explorer')
     .controller('blockInfosCtrl', function ($rootScope, $scope, $location, $routeParams,$q) {
 
         $scope.init=function()

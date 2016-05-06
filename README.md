@@ -1,6 +1,6 @@
-# EthExplorer (In Progress)
+# Earthdollar Explorer (In Progress)
 
-![EthExplorer Screenshot](http://i.imgur.com/NHFYq0x.png)
+![Earthdollar Screenshot](http://i.imgur.com/NHFYq0x.png)
 
 ##License
 
@@ -16,7 +16,7 @@ Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git "Git
 
 Clone the repo
 
-`git clone https://github.com/etherparty/explorer`
+`git clone https://github.com/EarthDollar/explorer`
 
 Download [Nodejs and npm](https://docs.npmjs.com/getting-started/installing-node "Nodejs install") if you don't have them
 
@@ -26,8 +26,8 @@ Start the program. All dependencies will be automatically downloaded
 
 Then visit http://localhost:8000 in your browser of choice. You might get an error message:
 
-`geth --rpc --rpccorsdomain "http://localhost:8000"`
+`ged --rpc --rpccorsdomain "http://localhost:8000"`
 
-Install [geth](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum "Geth install") if you don't already have it, then run the above command.
+#Install [ged](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum "Geth install") if you don't already have it, then run the above command.
 
 Then refresh the page in your browser 
