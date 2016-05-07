@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('EarthDollar Explorer', ['ngRoute','ui.bootstrap'])
+angular.module('ethExplorer', ['ngRoute','ui.bootstrap'])
 
 .config(['$routeProvider',
     function($routeProvider) {

@@ -1,4 +1,4 @@
-angular.module('EarthDollar Explorer')
+angular.module('ethExplorer')
     .controller('transactionInfosCtrl', function ($rootScope, $scope, $location, $routeParams,$q) {
 
         $scope.init=function()

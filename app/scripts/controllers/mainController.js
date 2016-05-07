@@ -1,4 +1,4 @@
-angular.module('EarthDollar Explorer')
+angular.module('ethExplorer')
     .controller('mainCtrl', function ($rootScope, $scope, $location) {
 
         $scope.blockNum = web3.eth.blockNumber;
