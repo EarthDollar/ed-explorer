@@ -1,6 +1,6 @@
 # EthExplorer (In Progress)
 
-![EthExplorer Screenshot](http://i.imgur.com/NHFYq0x.png)
+![EarthdollarExplorer Screenshot](http://i.imgur.com/NHFYq0x.png)
 
 ##License
 
@@ -26,8 +26,8 @@ Start the program. All dependencies will be automatically downloaded
 
 Then visit http://localhost:8000 in your browser of choice. You might get an error message:
 
-`ged --rpc --rpccorsdomain "http://localhost:8000"`
+`geth --rpc --rpccorsdomain "http://localhost:8000"`
 
-Install [ged](https://github.com/EarthDollar/go-earthdollar "Ged install") if you don't already have it, then run the above command.
+Install [ged](https://github.com/Earthdollar/go-earthdollar "Ged install") if you don't already have it, then run the above command.
 
 Then refresh the page in your browser 
