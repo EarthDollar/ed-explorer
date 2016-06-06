@@ -8,14 +8,11 @@ angular.module('ethExplorer')
             $scope.AddressId=$routeParams;
 
 
-            //if($scope.AddressId!==undefined) {
-				if (true) {
-            	$scope.address = $scope.AddressId;
-
-              // getAddressInfos()
-                    //.then(function(result){
-                        //var number = web3.eth.blockNumber;
-
+            if($scope.AddressId!==undefined) {
+            	$scope.address = $scope.AddressId.addressId; 
+            	$scope.balance = web3.fromWei(web3.eth.getBalance($scope.address));
+               $scope.txCount = web3.eth.getTransactionCount($scope.address);
+               
                     //$scope.result = result;
                     
                     //$scope.hello = $injector.currentTarget;
@@ -64,7 +61,7 @@ angular.module('ethExplorer')
 
 
 
-                });*/
+                */
 
             }
 
@@ -73,30 +70,12 @@ angular.module('ethExplorer')
             else{
                 $location.path("/");
             }
-
-
-            function getAddressInfos(){
-                var deferred = $q.defer();
-
-                web3.eth.getBalance   ($scope.address,function(error, result) {
-                    if(!error) {
-                        deferred.resolve(result);
-                    } else {
-                        deferred.reject(error);
-                    }
-                });
-                //return deferred.promise;
-                return true
-
-            }
-
-
         };
         $scope.init();
 
         // parse transactions
         $scope.transactions = []
-        web3.eth.getBlockTransactionCount($scope.blockId, function(error, result){
+        web3.eth.getBlockTransactionCount($scope.AddressId, function(error, result){
           var txCount = result
 
           for (var blockIdx = 0; blockIdx < txCount; blockIdx++) {
