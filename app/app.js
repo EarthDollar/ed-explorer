@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ethExplorer', ['ngRoute','ui.bootstrap'])
+angular.module('edExplorer', ['ngRoute','ui.bootstrap'])
 
 .config(['$routeProvider',
     function($routeProvider) {
@@ -27,7 +27,7 @@ angular.module('ethExplorer', ['ngRoute','ui.bootstrap'])
     }])
     .run(function($rootScope) {
         var web3 = require('web3');
-        web3.setProvider(new web3.providers.HttpProvider("http://localhost:8811"));
+        web3.setProvider(new web3.providers.HttpProvider("http://localhost:8545"));
         $rootScope.web3=web3;
         function sleepFor( sleepDuration ){
             var now = new Date().getTime();
