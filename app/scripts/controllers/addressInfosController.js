@@ -10,7 +10,7 @@ angular.module('ethExplorer')
 
             if($scope.AddressId!==undefined) {
             	$scope.address = $scope.AddressId.addressId; 
-            	$scope.balance = web3.fromWei(web3.eth.getBalance($scope.address));
+            	$scope.balance = web3.fromSeed(web3.eth.getBalance($scope.address));
                $scope.txCount = web3.eth.getTransactionCount($scope.address);
                
                     //$scope.result = result;
